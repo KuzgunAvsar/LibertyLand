@@ -1,0 +1,21 @@
+﻿  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" LibertyLandEditor Win64 Development -Project="C:\Users\user\OneDrive\Belgeler\Unreal Projects\LibertyLand\LibertyLand.uproject" -WaitMutex -FromMsBuild
+  Log file: C:\Users\user\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\user\OneDrive\Belgeler\Unreal Projects\LibertyLand).
+  Creating makefile for LibertyLandEditor (no existing makefile)
+C:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Marketplace\PlayerStatistics\Source\PlayerStatisticsEditor\PlayerStatisticsEditor.build.cs : warning : Referenced directory 'C:\Program Files\Epic Games\UE_5.1\Engine\Source\PlayerStatisticsEditor\Public' does not exist.
+  Unhandled exception: System.IO.FileNotFoundException: Could not load file or assembly 'C:\Program Files\Epic Games\UE_5.1\Engine\Binaries\DotNET\UnrealBuildTool\Plugins\ScriptGeneratorUbtPlugin\ScriptGeneratorUbtPlugin.dll'. Sistem belirtilen yolu bulamıyor.
+  File name: 'C:\Program Files\Epic Games\UE_5.1\Engine\Binaries\DotNET\UnrealBuildTool\Plugins\ScriptGeneratorUbtPlugin\ScriptGeneratorUbtPlugin.dll'
+     at System.Runtime.Loader.AssemblyLoadContext.LoadFromPath(IntPtr ptrNativeAssemblyLoadContext, String ilPath, String niPath, ObjectHandleOnStack retAssembly)
+     at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+     at System.Reflection.Assembly.LoadFile(String path)
+     at EpicGames.UHT.Utils.UhtTables.LoadAssembly(String assemblyFilePath) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\Shared\EpicGames.UHT\Utils\UhtTables.cs:line 551
+     at EpicGames.UHT.Utils.UhtTables.IsUhtPlugin(String assemblyFilePath) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\Shared\EpicGames.UHT\Utils\UhtTables.cs:line 521
+     at UnrealBuildTool.UEBuildTarget.SetupUbtPlugins(ILogger Logger) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Configuration\UEBuildTarget.cs:line 3781
+     at UnrealBuildTool.UEBuildTarget.SetupPlugins(ILogger Logger) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Configuration\UEBuildTarget.cs:line 3531
+     at UnrealBuildTool.UEBuildTarget.PreBuildSetup(ILogger Logger) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Configuration\UEBuildTarget.cs:line 2677
+     at UnrealBuildTool.UEBuildTarget.Create(TargetDescriptor Descriptor, Boolean bSkipRulesCompile, Boolean bForceRulesCompile, Boolean bUsePrecompiled, ILogger Logger) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Configuration\UEBuildTarget.cs:line 857
+     at UnrealBuildTool.BuildMode.CreateMakefile(BuildConfiguration BuildConfiguration, TargetDescriptor TargetDescriptor, ISourceFileWorkingSet WorkingSet, ILogger Logger) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 741
+     at UnrealBuildTool.BuildMode.Build(List`1 TargetDescriptors, BuildConfiguration BuildConfiguration, ISourceFileWorkingSet WorkingSet, BuildOptions Options, FileReference WriteOutdatedActionsFile, ILogger Logger, Boolean bSkipPreBuildTargets) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 275
+     at UnrealBuildTool.BuildMode.Execute(CommandLineArguments Arguments, ILogger Logger) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 242
+     at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 648
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(44,5): error MSB3073: ""C:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" LibertyLandEditor Win64 Development -Project="C:\Users\user\OneDrive\Belgeler\Unreal Projects\LibertyLand\LibertyLand.uproject" -WaitMutex -FromMsBuild" komutundan 6 koduyla çıkıldı.

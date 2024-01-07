@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "LibertyLand",
+			"Path": "C:\\Users\\user\\OneDrive\\Belgeler\\Unreal Projects\\LibertyLand\\Source\\LibertyLand.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "LibertyLandEditor",
+			"Path": "C:\\Users\\user\\OneDrive\\Belgeler\\Unreal Projects\\LibertyLand\\Source\\LibertyLandEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
